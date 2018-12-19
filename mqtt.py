@@ -51,6 +51,7 @@ def on_message(client, userdata, msg):
 def start():
     client.on_connect = on_connect
     client.on_message = on_message
+    client.username_pw_set(MQTT_USERNAME, MQTT_PASSWORD)
     client.connect(MQTT_HOST, MQTT_PORT, MQTT_KEEPALIVE)
         
     client.loop_forever()
