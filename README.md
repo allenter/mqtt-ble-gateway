@@ -1,12 +1,15 @@
 # mqtt-ble-gateway
 
-The mqtt-ble-gateway is designed to provide a generic bidirectional gateway between a MQTT broker and BLE devices. It allows to scan for BLE devices and read or write specific characteristics by their UUID. Furthermore, subscriptions and notifications are supported.
+The mqtt-ble-gateway is designed to provide a generic bidirectional gateway between a MQTT broker and BLE devices. It allows to scan for BLE devices and read or write specific characteristics by their UUID. Furthermore, subscriptions and notifications are supported.Modified old version,add comannds about client.username_pw_set() and defind MQTT_USERNAME/MQTT_PASSWORD.
 
 ## Installation
 ```
+# Install pygatt paho-mqtt pexpect
 sudo pip3 install pygatt paho-mqtt pexpect
-which hcitool  # get the PATH OF THE hcitool
-setcap 'cap_net_raw,cap_net_admin+eip' **PATH OF THE hcitool**
+# Get the <PATH OF THE hcitool>
+which hcitool
+# Setcap
+setcap 'cap_net_raw,cap_net_admin+eip' <PATH OF THE hcitool>
 ```
 
 ## Configuration
