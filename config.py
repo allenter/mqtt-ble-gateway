@@ -2,7 +2,7 @@ TOPIC_PREFIX = "home/MQTTtoBLE"             #MQTT prefix to identify this device
 TOPIC_COMMAND = TOPIC_PREFIX + "/command"   #MQTT -> BLE
 TOPIC_DEVICE = TOPIC_PREFIX + "/device"     #MQTT <- MQTT
 
-MQTT_HOST = "localhost"
+MQTT_HOST = "your_mqtt_host"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE = 60
 MQTT_USERNAME = 'mqtt'
