@@ -4,13 +4,20 @@ The mqtt-ble-gateway is designed to provide a generic bidirectional gateway betw
 
 ## Installation
 ```
-sudo pip install pygatt paho-mqtt pexpect
-setcap 'cap_net_raw,cap_net_admin+eip' `which hcitool`
+sudo pip3 install pygatt paho-mqtt pexpect
+which hcitool  # get the PATH OF THE hcitool
+setcap 'cap_net_raw,cap_net_admin+eip' **PATH OF THE hcitool**
 ```
+
+## Configuration
+```
+vim config.py
+```
+Config your parameters
 
 ## Start
 ```
-python main.py
+python3 main.py
 ```
 
 ## MQTT commands
