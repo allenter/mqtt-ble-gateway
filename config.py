@@ -5,5 +5,7 @@ TOPIC_DEVICE = TOPIC_PREFIX + "/device"     #MQTT <- MQTT
 MQTT_HOST = "localhost"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE = 60
+MQTT_USERNAME = 'mqtt'
+MQTT_PASSWORD = 'mqtt'
 
 BLE_CONNECTION_TRIES = 3					#number of BLE error retries
